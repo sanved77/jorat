@@ -4,14 +4,17 @@
   "description": "Jor.at url shortener",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
   },
   "author": "Sanved Tapkeer",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.10.7",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "mongoose": "^6.1.8"
+    "mongoose": "^6.1.8",
+    "nanoid": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

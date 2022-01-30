@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="spacer layer_bottom">
+    <div class="container">
+        <h1>JOR.AT</h1>
+        <% if (error) { %>
+            <p>Looks like the short URL doesn't exist :-( </p>
+        <% } else {%>
+        <p><a class="title-anchor" href="<%= longURL %>"> <%= shortURL %> </a></p>
+        <div class="panel">
+            <p class="info-tags">Created on <span> <%= createdOn %> </span></p>
+            <p class="info-tags">Opened <span> <%= clicks %> </span> so far</p>
+            <p class="info-tags">Redirects to <a href="<%= longURL %>">this link</a></p>
+        </div>
+        <% } %>
+    </div>
+
+        
+    </div>
+</body>
+
+</html>
